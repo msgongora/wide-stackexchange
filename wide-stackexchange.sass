@@ -1,0 +1,29 @@
+$space-gained: 332px
+
+body:not(.stackexchange-disabled) #sidebar
+    display: none
+
+body:not(.stackexchange-disabled) .topbar
+    position: fixed
+    z-index: 10000
+
+body:not(.stackexchange-disabled) .container
+    #mainbar, .mainbar, #answers, #answers-header, .answer
+        width: 728px + $space-gained
+        #question-mini-list > .question-summary
+            width: 100%
+        .narrow .summary
+            width: 530px + $space-gained
+        .post-text, .wmd-preview, .comments, .post-editor, .wmd-input
+            width: 660px + $space-gained
+        .wmd-button-bar
+            width: 634px + $space-gained
+        .post-text img, .wmd-preview img
+            max-width: 630px + $space-gained
+            width: auto
+            display: block
+            margin: 0 auto
+        .wmd-container .grippie
+            width: 658px + $space-gained
+        .grippie
+            background-position: (-60px + (658px + $space-gained)/2) -364px
